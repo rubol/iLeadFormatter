@@ -234,9 +234,6 @@ void MySqlConn::fill_country(std::vector<std::string>& country)
 	con->setSchema(DB);
 	try
 	{
-	/*	std::string query = "SELECT * from users where username = '";
-		query.append(username);
-		query.append("'");*/
 		std::string query = "select * from country";
 		stmt = con->createStatement();
 		res = stmt->executeQuery(query);
